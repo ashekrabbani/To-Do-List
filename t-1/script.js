@@ -1,5 +1,5 @@
 const todoinput = document.querySelector(".todo-input")
-const form = document.querySelector(".form")
+const btn = document.querySelector(".btn")
 const todo = document.querySelector(".todo ul")
 const edit = document.querySelector(".edit")
 const dlt = document.querySelector("#dlt")
@@ -74,16 +74,15 @@ todo.addEventListener('click', (e) => {
     }
  })
 
- form.addEventListener('submit', (e) => {
-    e.preventDefault()
+ btn.addEventListener('click', () => {
     addtodo(todoinput.value)
 })
 
-// document.addEventListener('keyup', (e) =>{
-//     if (e.key === 'Enter'){
-//         addtodo(todoinput.value)
-//     }
-// })
+document.addEventListener('keyup', (e) =>{
+    if (e.key === 'Enter'){
+        addtodo(todoinput.value)
+    }
+})
 
 ////Hey SeloraX
 

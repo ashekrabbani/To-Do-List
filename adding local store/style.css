@@ -105,7 +105,7 @@ body{
 
 .todo ul{
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .icon{
@@ -159,7 +159,7 @@ body{
     overflow: hidden;
 } */
 
-/* .stodo.open {
+/* .open {
     transform: scale(1.02);
     background: #dff6ff;
     padding: 20px;
